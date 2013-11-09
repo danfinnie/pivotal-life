@@ -3,6 +3,9 @@ require 'open-uri'
 require 'nokogiri'
 require 'date'
 require 'cgi'
+require 'dotenv'
+
+Dotenv.load
 
 # Config
 # make sure your URLs end with /full, not /simple (which is default)!

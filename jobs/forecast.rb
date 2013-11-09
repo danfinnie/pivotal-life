@@ -1,12 +1,15 @@
 require 'net/https'
 require 'json'
+require 'dotenv'
+
+Dotenv.load
 
 # Forecast API Key from https://developer.forecast.io
 forecast_api_key = ENV['FORECAST_API_KEY']
 
 # Latitude, Longitude for location
-forecast_location_lat = "40.74033720000001"
-forecast_location_long = "-73.9951462"
+forecast_location_lat = ENV['LATITUDE']
+forecast_location_long = ENV['LONGITUDE']
 
 # Unit Format
 # "us" - U.S. Imperial

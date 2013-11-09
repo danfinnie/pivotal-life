@@ -27,6 +27,7 @@ GEM
       thin
       thor
     diff-lcs (1.2.4)
+    dotenv (0.9.0)
     eventmachine (1.0.3)
     execjs (2.0.2)
     faraday (0.8.8)
@@ -126,6 +127,7 @@ PLATFORMS
 DEPENDENCIES
   citibikenyc
   dashing
+  dotenv
   geocoder
   guard-rspec
   httparty

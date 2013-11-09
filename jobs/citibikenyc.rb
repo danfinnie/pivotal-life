@@ -1,6 +1,9 @@
 require 'citibikenyc'
+require 'dotenv'
 
-lat_long = [40.74033720000001, -73.9951462]
+Dotenv.load
+
+lat_long = [ENV['LATITUDE'], ENV['LONGITUDE']]
 radius = 0.30
 
 bike_counts = Hash.new({ value: 0 })

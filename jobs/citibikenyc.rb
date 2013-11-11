@@ -3,7 +3,9 @@ require 'dotenv'
 
 Dotenv.load
 
-lat_long = [ENV['LATITUDE'], ENV['LONGITUDE']]
+latitude = ENV['LATITUDE'] || 40.740673
+longitude = ENV['LONGITUDE'] || -73.994808
+lat_long = [latitude, longitude]
 radius = 0.30
 
 bike_counts = Hash.new({ value: 0 })

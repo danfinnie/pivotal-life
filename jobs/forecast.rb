@@ -8,8 +8,8 @@ Dotenv.load
 forecast_api_key = ENV['FORECAST_API_KEY']
 
 # Latitude, Longitude for location
-forecast_location_lat = ENV['LATITUDE']
-forecast_location_long = ENV['LONGITUDE']
+forecast_location_lat = ENV['LATITUDE'] || 40.740673
+forecast_location_long = ENV['LONGITUDE'] || -73.994808
 
 # Unit Format
 # "us" - U.S. Imperial

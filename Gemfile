@@ -16,3 +16,6 @@ gem 'httparty'
 
 gem 'rspec'
 gem 'guard-rspec'
+gem 'cucumber'
+gem 'cucumber-sinatra'
+

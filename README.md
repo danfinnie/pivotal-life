@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/spilth/pivotal-life.png?branch=master)](https://travis-ci.org/spilth/pivotal-life)
+
 # Pivotal Life
 
 A dashboard for Pivots at the office.

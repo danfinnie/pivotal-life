@@ -12,11 +12,12 @@ Twitter.configure do |config|
   config.oauth_token_secret = ENV['TWITTER_OAUTH_SECRET']
 end
 
-username = "@pivotallabs"
+user_name = "spilth"
+list_name = "pivotal-life"
 
 SCHEDULER.every '10m', :first_in => 0 do |job|
   begin
-    tweets = Twitter.user_timeline(username)
+    tweets = Twitter.list_timeline(user_name, list_name)
 
     if tweets
       tweets.map! do |tweet|

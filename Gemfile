@@ -2,22 +2,21 @@ source 'https://rubygems.org'
 
 ruby '2.0.0'
 
-gem 'rake'
-
+gem 'citibikenyc'
 gem 'dashing'
-
 gem 'dotenv'
-
+gem 'geocoder'
+gem 'httparty'
+gem 'nokogiri'
+gem 'rake'
 gem 'twitter'
 
-gem 'citibikenyc'
-gem 'geocoder'
+group :development do
+  gem 'guard-rspec'
+end
 
-gem 'nokogiri'
-gem 'httparty'
-
-gem 'rspec'
-gem 'guard-rspec'
-gem 'cucumber'
-gem 'cucumber-sinatra'
-
+group :development, :test do
+  gem 'cucumber'
+  gem 'cucumber-sinatra'
+  gem 'rspec'
+end

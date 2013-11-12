@@ -6,7 +6,7 @@ class Dashing.Forecast extends Dashing.Widget
       timestamp = new Date(updatedAt * 1000)
       hours = timestamp.getHours()
       minutes = ("0" + timestamp.getMinutes()).slice(-2)
-      "Updated at #{hours}:#{minutes}"
+      "Last updated at #{hours}:#{minutes}"
  
   constructor: ->
     super

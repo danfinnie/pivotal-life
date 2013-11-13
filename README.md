@@ -11,17 +11,9 @@ To run the status board locally, do the following:
     $ git clone git@github.com:spilth/pivotal-life.git
     $ cd pivotal-life
     $ bundle
+    $ cp .env{.dist,}
 
-Create a `.env` file in the root of the project with the following contents:
-
-    LATITUDE=<your lat>
-    LONGITUDE=<your long>
-    FORECAST_API_KEY=<your forecast.io api key>
-    EVENT_CALENDAR_URL=<your google calendar xml url>
-    TWITTER_CONSUMER_KEY=<your twitter consumer key>
-    TWITTER_CONSUMER_SECRET=<your twitter consumer secret>
-    TWITTER_OAUTH_TOKEN=<your twitter oauth token>
-    TWITTER_OAUTH_SECRET=<your twitter oauth secret>
+Open the `.env` from the last line above and customize to your liking.
 
 Don't check that file into version control.
 

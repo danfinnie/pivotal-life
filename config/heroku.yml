@@ -1,0 +1,10 @@
+production:
+  app: pivotal-life
+  config:
+    BUNDLE_WITHOUT: "development:test"
+
+acceptance:
+  app: pivotal-life-acceptance
+  config: &default
+    BUNDLE_WITHOUT: "development:test"
+

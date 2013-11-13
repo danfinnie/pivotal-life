@@ -12,6 +12,7 @@ gem 'rake'
 gem 'twitter'
 
 group :development do
+  gem 'heroku_san'
   gem 'guard-rspec'
 end
 

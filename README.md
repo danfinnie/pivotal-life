@@ -29,7 +29,7 @@ Start up Dashing:
 
     $ dashing start
 
-Then navigate to <http://localhost:3030/pivotal>.
+Then navigate to <http://localhost:3030/nyc>.
 
 ## Running on Heroku
 

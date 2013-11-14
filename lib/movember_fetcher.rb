@@ -9,7 +9,7 @@ class MovemberFetcher
 
   def fetch
     {
-      cols: [ team_name, donations_raised ].map { |value| { value: value } }
+      cols: [ team_name, team_size, donations_raised ].map { |value| { value: value } }
     }
   end
 
@@ -19,6 +19,10 @@ class MovemberFetcher
 
   def team_name
     clean_selector_output('h1')
+  end
+
+  def team_size
+    clean_selector_output('h3:contains("Team Summary")')[/\d+/, 0]
   end
 
   def donations_raised

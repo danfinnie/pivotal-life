@@ -11,8 +11,12 @@ describe MovemberFetcher do
       expect(fetcher.fetch[:cols][0][:value]).to eq "Pivotal - NYC"
     end
 
+    it "returns the correct team size" do
+      expect(fetcher.fetch[:cols][1][:value]).to eq "20"
+    end
+
     it "returns the correct team donation total" do
-      expect(fetcher.fetch[:cols][1][:value]).to eq "$4,764"
+      expect(fetcher.fetch[:cols][2][:value]).to eq "$4,764"
     end
   end
 end

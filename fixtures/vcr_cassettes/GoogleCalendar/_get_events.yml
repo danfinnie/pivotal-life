@@ -1,0 +1,121 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.google.com/calendar/feeds/pivotallabs.com_n5a473ppkd06bgio9h4fudojf4@group.calendar.google.com/public/basic
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/atom+xml; charset=UTF-8
+      Expires:
+      - Thu, 14 Nov 2013 03:44:24 GMT
+      Date:
+      - Thu, 14 Nov 2013 03:44:24 GMT
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Vary:
+      - Accept, X-GData-Authorization, GData-Version
+      Gdata-Version:
+      - '1.0'
+      Last-Modified:
+      - Wed, 13 Nov 2013 19:37:29 GMT
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Server:
+      - GSE
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz48ZmVlZCB4
+        bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwNS9BdG9tJyB4bWxuczpvcGVu
+        U2VhcmNoPSdodHRwOi8vYTkuY29tLy0vc3BlYy9vcGVuc2VhcmNocnNzLzEu
+        MC8nIHhtbG5zOmdDYWw9J2h0dHA6Ly9zY2hlbWFzLmdvb2dsZS5jb20vZ0Nh
+        bC8yMDA1JyB4bWxuczpnZD0naHR0cDovL3NjaGVtYXMuZ29vZ2xlLmNvbS9n
+        LzIwMDUnPjxpZD5odHRwOi8vd3d3Lmdvb2dsZS5jb20vY2FsZW5kYXIvZmVl
+        ZHMvcGl2b3RhbGxhYnMuY29tX241YTQ3M3Bwa2QwNmJnaW85aDRmdWRvamY0
+        JTQwZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbS9wdWJsaWMvYmFzaWM8L2lk
+        Pjx1cGRhdGVkPjIwMTMtMTEtMTNUMTk6Mzc6MjkuMDAwWjwvdXBkYXRlZD48
+        Y2F0ZWdvcnkgc2NoZW1lPSdodHRwOi8vc2NoZW1hcy5nb29nbGUuY29tL2cv
+        MjAwNSNraW5kJyB0ZXJtPSdodHRwOi8vc2NoZW1hcy5nb29nbGUuY29tL2cv
+        MjAwNSNldmVudCcvPjx0aXRsZSB0eXBlPSd0ZXh0Jz5QaXZvdGFsIExpZmUg
+        VGVzdCBDYWxlbmRhcjwvdGl0bGU+PHN1YnRpdGxlIHR5cGU9J3RleHQnLz48
+        bGluayByZWw9J2FsdGVybmF0ZScgdHlwZT0ndGV4dC9odG1sJyBocmVmPSdo
+        dHRwOi8vd3d3Lmdvb2dsZS5jb20vY2FsZW5kYXIvZW1iZWQ/c3JjPXBpdm90
+        YWxsYWJzLmNvbV9uNWE0NzNwcGtkMDZiZ2lvOWg0ZnVkb2pmNCU0MGdyb3Vw
+        LmNhbGVuZGFyLmdvb2dsZS5jb20nLz48bGluayByZWw9J2h0dHA6Ly9zY2hl
+        bWFzLmdvb2dsZS5jb20vZy8yMDA1I2ZlZWQnIHR5cGU9J2FwcGxpY2F0aW9u
+        L2F0b20reG1sJyBocmVmPSdodHRwOi8vd3d3Lmdvb2dsZS5jb20vY2FsZW5k
+        YXIvZmVlZHMvcGl2b3RhbGxhYnMuY29tX241YTQ3M3Bwa2QwNmJnaW85aDRm
+        dWRvamY0JTQwZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbS9wdWJsaWMvYmFz
+        aWMnLz48bGluayByZWw9J2h0dHA6Ly9zY2hlbWFzLmdvb2dsZS5jb20vZy8y
+        MDA1I2JhdGNoJyB0eXBlPSdhcHBsaWNhdGlvbi9hdG9tK3htbCcgaHJlZj0n
+        aHR0cDovL3d3dy5nb29nbGUuY29tL2NhbGVuZGFyL2ZlZWRzL3Bpdm90YWxs
+        YWJzLmNvbV9uNWE0NzNwcGtkMDZiZ2lvOWg0ZnVkb2pmNCU0MGdyb3VwLmNh
+        bGVuZGFyLmdvb2dsZS5jb20vcHVibGljL2Jhc2ljL2JhdGNoJy8+PGxpbmsg
+        cmVsPSdzZWxmJyB0eXBlPSdhcHBsaWNhdGlvbi9hdG9tK3htbCcgaHJlZj0n
+        aHR0cDovL3d3dy5nb29nbGUuY29tL2NhbGVuZGFyL2ZlZWRzL3Bpdm90YWxs
+        YWJzLmNvbV9uNWE0NzNwcGtkMDZiZ2lvOWg0ZnVkb2pmNCU0MGdyb3VwLmNh
+        bGVuZGFyLmdvb2dsZS5jb20vcHVibGljL2Jhc2ljP21heC1yZXN1bHRzPTI1
+        Jy8+PGF1dGhvcj48bmFtZT5CcmlhbiBLZWxseTwvbmFtZT48ZW1haWw+Ymtl
+        bGx5QHBpdm90YWxsYWJzLmNvbTwvZW1haWw+PC9hdXRob3I+PGdlbmVyYXRv
+        ciB2ZXJzaW9uPScxLjAnIHVyaT0naHR0cDovL3d3dy5nb29nbGUuY29tL2Nh
+        bGVuZGFyJz5Hb29nbGUgQ2FsZW5kYXI8L2dlbmVyYXRvcj48b3BlblNlYXJj
+        aDp0b3RhbFJlc3VsdHM+MTwvb3BlblNlYXJjaDp0b3RhbFJlc3VsdHM+PG9w
+        ZW5TZWFyY2g6c3RhcnRJbmRleD4xPC9vcGVuU2VhcmNoOnN0YXJ0SW5kZXg+
+        PG9wZW5TZWFyY2g6aXRlbXNQZXJQYWdlPjI1PC9vcGVuU2VhcmNoOml0ZW1z
+        UGVyUGFnZT48Z0NhbDp0aW1lem9uZSB2YWx1ZT0nQW1lcmljYS9OZXdfWW9y
+        aycvPjxnQ2FsOnRpbWVzQ2xlYW5lZCB2YWx1ZT0nMCcvPjxnZDp3aGVyZSB2
+        YWx1ZVN0cmluZz0nJy8+PGVudHJ5PjxpZD5odHRwOi8vd3d3Lmdvb2dsZS5j
+        b20vY2FsZW5kYXIvZmVlZHMvcGl2b3RhbGxhYnMuY29tX241YTQ3M3Bwa2Qw
+        NmJnaW85aDRmdWRvamY0JTQwZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbS9w
+        dWJsaWMvYmFzaWMvbWxxMnJhMXVybWFhYmZxbjZkcHZjazVoM288L2lkPjxw
+        dWJsaXNoZWQ+MjAxMy0xMS0xM1QwMzo1OToyMC4wMDBaPC9wdWJsaXNoZWQ+
+        PHVwZGF0ZWQ+MjAxMy0xMS0xM1QwMzo1OTozNy4wMDBaPC91cGRhdGVkPjxj
+        YXRlZ29yeSBzY2hlbWU9J2h0dHA6Ly9zY2hlbWFzLmdvb2dsZS5jb20vZy8y
+        MDA1I2tpbmQnIHRlcm09J2h0dHA6Ly9zY2hlbWFzLmdvb2dsZS5jb20vZy8y
+        MDA1I2V2ZW50Jy8+PHRpdGxlIHR5cGU9J2h0bWwnPlJlY3VycmluZyBXZWRu
+        ZXNkYXkgRXZlbnQ8L3RpdGxlPjxzdW1tYXJ5IHR5cGU9J2h0bWwnPldoZW46
+        IFdlZCBOb3YgMTMsIDIwMTMgM3BtIHRvIDRwbSZhbXA7bmJzcDsKRVNUJmx0
+        O2JyJmd0OwombHQ7YnImZ3Q7V2hvOiBQaXZvdGFsIExpZmUgVGVzdCBDYWxl
+        bmRhcgombHQ7YnImZ3Q7V2hlcmU6IFJlY3VycmluZyBXZWRuZXNkYXkgTG9j
+        YXRpb24KJmx0O2JyJmd0O0V2ZW50IFN0YXR1czogY29uZmlybWVkPC9zdW1t
+        YXJ5Pjxjb250ZW50IHR5cGU9J2h0bWwnPldoZW46IFdlZCBOb3YgMTMsIDIw
+        MTMgM3BtIHRvIDRwbcKgCkVTVCZsdDticiAvJmd0OwombHQ7YnIgLyZndDtX
+        aG86IFBpdm90YWwgTGlmZSBUZXN0IENhbGVuZGFyCiZsdDticiAvJmd0O1do
+        ZXJlOiBSZWN1cnJpbmcgV2VkbmVzZGF5IExvY2F0aW9uCiZsdDticiAvJmd0
+        O0V2ZW50IFN0YXR1czogY29uZmlybWVkCiZsdDticiAvJmd0O0V2ZW50IERl
+        c2NyaXB0aW9uOiBSZWN1cnJpbmcgV2VkbmVzZGF5IERlc2NyaXB0aW9uPC9j
+        b250ZW50PjxsaW5rIHJlbD0nYWx0ZXJuYXRlJyB0eXBlPSd0ZXh0L2h0bWwn
+        IGhyZWY9J2h0dHA6Ly93d3cuZ29vZ2xlLmNvbS9jYWxlbmRhci9ldmVudD9l
+        aWQ9Yld4eE1uSmhNWFZ5YldGaFltWnhialprY0haamF6Vm9NMjhnY0dsMmIz
+        UmhiR3hoWW5NdVkyOXRYMjQxWVRRM00zQndhMlF3Tm1KbmFXODVhRFJtZFdS
+        dmFtWTBRR2MnIHRpdGxlPSdhbHRlcm5hdGUnLz48bGluayByZWw9J3NlbGYn
+        IHR5cGU9J2FwcGxpY2F0aW9uL2F0b20reG1sJyBocmVmPSdodHRwOi8vd3d3
+        Lmdvb2dsZS5jb20vY2FsZW5kYXIvZmVlZHMvcGl2b3RhbGxhYnMuY29tX241
+        YTQ3M3Bwa2QwNmJnaW85aDRmdWRvamY0JTQwZ3JvdXAuY2FsZW5kYXIuZ29v
+        Z2xlLmNvbS9wdWJsaWMvYmFzaWMvbWxxMnJhMXVybWFhYmZxbjZkcHZjazVo
+        M28nLz48YXV0aG9yPjxuYW1lPmJrZWxseUBwaXZvdGFsbGFicy5jb208L25h
+        bWU+PGVtYWlsPmJrZWxseUBwaXZvdGFsbGFicy5jb208L2VtYWlsPjwvYXV0
+        aG9yPjwvZW50cnk+PC9mZWVkPg==
+    http_version: 
+  recorded_at: Thu, 14 Nov 2013 03:44:25 GMT
+recorded_with: VCR 2.7.0

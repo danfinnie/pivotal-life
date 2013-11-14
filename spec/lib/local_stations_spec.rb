@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 
-describe LocalStations, :vcr => trur do
+describe LocalStations, :vcr => true do
   describe ".find" do
     let(:address) { "625 6th Avenue, New York, NY"}
     let(:lat_lon) { Geocoder.coordinates(address) }

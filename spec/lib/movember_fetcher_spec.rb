@@ -8,11 +8,11 @@ describe MovemberFetcher do
     let(:fetcher) { MovemberFetcher.new(1005517, page_source) }
 
     it "returns the correct team name" do
-      expect(fetcher.fetch[:label]).to eq "Pivotal - NYC"
+      expect(fetcher.fetch[:cols][0][:value]).to eq "Pivotal - NYC"
     end
 
     it "returns the correct team donation total" do
-      expect(fetcher.fetch[:value]).to eq "$4,764"
+      expect(fetcher.fetch[:cols][1][:value]).to eq "$4,764"
     end
   end
 end

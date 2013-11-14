@@ -9,8 +9,7 @@ class MovemberFetcher
 
   def fetch
     {
-      label: team_name,
-      value: donations_raised
+      cols: [ team_name, donations_raised ].map { |value| { value: value } }
     }
   end
 

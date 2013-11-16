@@ -17,10 +17,10 @@ group :development do
 end
 
 group :development, :test do
-  gem 'cucumber'
-  gem 'cucumber-sinatra'
   gem 'rspec'
   gem 'vcr'
   gem 'webmock'
+  gem 'simple_bdd'
+  gem 'capybara'
+  gem 'poltergeist'
 end
-

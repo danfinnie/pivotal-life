@@ -17,7 +17,11 @@ group :development do
 end
 
 group :development, :test do
+  gem 'pry'
   gem 'cucumber'
   gem 'cucumber-sinatra'
   gem 'rspec'
+  gem 'vcr'
+  gem 'webmock', '<1.16'
 end
+

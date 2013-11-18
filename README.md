@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/spilth/pivotal-life.png?branch=master)](https://travis-ci.org/spilth/pivotal-life) [![Code Climate](https://codeclimate.com/github/spilth/pivotal-life.png)](https://codeclimate.com/github/spilth/pivotal-life)
+[![Build Status](https://travis-ci.org/spilth/pivotal-life.png?branch=master)](https://travis-ci.org/spilth/pivotal-life) [![Coverage Status](https://coveralls.io/repos/spilth/pivotal-life/badge.png)](https://coveralls.io/r/spilth/pivotal-life)
 
 # Pivotal Life
 

@@ -11,6 +11,8 @@ gem 'nokogiri'
 gem 'rake'
 gem 'twitter'
 
+gem 'coveralls', require: false
+
 group :development do
   gem 'heroku_san'
   gem 'guard-rspec'

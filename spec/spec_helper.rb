@@ -1,5 +1,7 @@
 require 'vcr'
 require 'pry'
+require 'coveralls'
+Coveralls.wear!
 
 require_relative '../lib/local_stations'
 

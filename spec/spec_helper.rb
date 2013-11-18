@@ -1,9 +1,14 @@
+require 'dashing'
+require 'capybara/rspec'
+require 'capybara/dsl'
 require 'vcr'
 require 'pry'
 require 'coveralls'
 Coveralls.wear!
 
 Dir.glob(File.expand_path("../../lib/*.rb", __FILE__)).each { |file| require file }
+
+Capybara.app = Sinatra::Application
 
 VCR.configure do |c|
   c.hook_into :webmock

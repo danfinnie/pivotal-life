@@ -3,7 +3,7 @@ require 'pry'
 require 'coveralls'
 Coveralls.wear!
 
-require_relative '../lib/local_stations'
+Dir.glob(File.expand_path("../../lib/*.rb", __FILE__)).each { |file| require file }
 
 VCR.configure do |c|
   c.hook_into :webmock

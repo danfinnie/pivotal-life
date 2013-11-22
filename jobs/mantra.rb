@@ -4,6 +4,6 @@ mantras = [
   'Be kind.'
 ]
 
-SCHEDULER.every '5s' do
+SCHEDULER.every '15s' do
   send_event('mantra', { text: mantras.sample })
 end

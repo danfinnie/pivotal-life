@@ -1,0 +1,116 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.mta.info/status/serviceStatus.txt
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 22 Nov 2013 00:41:13 GMT
+      Content-Type:
+      - application/xml
+      Last-Modified:
+      - Fri, 22 Nov 2013 00:40:07 GMT
+      Vary:
+      - accept-encoding
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: |
+        <service>
+          <responsecode>0</responsecode>
+          <timestamp>11/21/2013 7:40:03 PM</timestamp>
+          <subway>
+            <line>
+              <name>123</name>
+              <status>DELAYS</status>
+              <text>[2] is delayed</text>
+              <Date></Date>
+              <Time></Time>
+            </line>
+            <line>
+              <name>456</name>
+              <status>DELAYS</status>
+              <text>[6] is 5 minutes late</text>
+              <Date></Date>
+              <Time></Time>
+            </line>
+            <line>
+              <name>7</name>
+              <status>GOOD SERVICE</status>
+              <text />
+              <Date></Date>
+              <Time></Time>
+            </line>
+            <line>
+              <name>ACE</name>
+              <status>GOOD SERVICE</status>
+              <text />
+              <Date></Date>
+              <Time></Time>
+            </line>
+            <line>
+              <name>BDFM</name>
+              <status>GOOD SERVICE</status>
+              <text />
+              <Date></Date>
+              <Time></Time>
+            </line>
+            <line>
+              <name>G</name>
+              <status>GOOD SERVICE</status>
+              <text />
+              <Date></Date>
+              <Time></Time>
+            </line>
+            <line>
+              <name>JZ</name>
+              <status>GOOD SERVICE</status>
+              <text />
+              <Date></Date>
+              <Time></Time>
+            </line>
+            <line>
+              <name>L</name>
+              <status>GOOD SERVICE</status>
+              <text />
+              <Date></Date>
+              <Time></Time>
+            </line>
+            <line>
+              <name>S</name>
+              <status>GOOD SERVICE</status>
+              <text />
+              <Date></Date>
+              <Time></Time>
+            </line>
+            <line>
+              <name>SIR</name>
+              <status>GOOD SERVICE</status>
+              <text />
+              <Date></Date>
+              <Time></Time>
+            </line>
+            <line>
+              <name>NQR</name>
+              <status>SANDY REROUTE</status>
+              <text>Reroute</text>
+              <Date>11/21/2013</Date>
+              <Time>10:01AM</Time>
+            </line>
+          </subway>
+        </service>
+    http_version: 
+  recorded_at: Fri, 22 Nov 2013 00:41:18 GMT
+recorded_with: VCR 2.7.0

@@ -3,21 +3,19 @@ require 'dotenv'
 
 Dotenv.load
 
-#### Get your twitter keys & secrets:
-#### https://dev.twitter.com/docs/auth/tokens-devtwittercom
-Twitter.configure do |config|
-  config.consumer_key = ENV['TWITTER_CONSUMER_KEY']
-  config.consumer_secret = ENV['TWITTER_CONSUMER_SECRET']
-  config.oauth_token = ENV['TWITTER_OAUTH_TOKEN']
-  config.oauth_token_secret = ENV['TWITTER_OAUTH_SECRET']
+client = Twitter::REST::Client.new do |config|
+  config.consumer_key        = ENV['TWITTER_CONSUMER_KEY']
+  config.consumer_secret     = ENV['TWITTER_CONSUMER_SECRET']
+  config.access_token        = ENV['TWITTER_OAUTH_TOKEN']
+  config.access_token_secret = ENV['TWITTER_OAUTH_SECRET']
 end
 
-user_name = "spilth"
-list_name = "pivotal-life"
+user_name = 'spilth'
+list_name = 'pivotal-life'
 
 SCHEDULER.every '10m', :first_in => 0 do |job|
   begin
-    tweets = Twitter.list_timeline(user_name, list_name)
+    tweets = client.list_timeline(user_name, list_name)
 
     if tweets
       tweets.map! do |tweet|

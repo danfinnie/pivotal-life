@@ -1,4 +1,3 @@
-require 'citibikenyc'
 require 'dotenv'
 
 Dotenv.load
@@ -6,13 +5,11 @@ Dotenv.load
 latitude = ENV['LATITUDE'] || 40.740673
 longitude = ENV['LONGITUDE'] || -73.994808
 lat_long = [latitude, longitude]
-radius = 0.30
 
-bike_counts = Hash.new({ value: 0 })
+SCHEDULER.every '1m' do
+  stations = CitibikeFetcher.find(lat_long, 0.30)
 
-SCHEDULER.every '60s' do
-  stations = LocalStations.find(lat_long, radius)
-
+  bike_counts = Hash.new({ value: 0 })
   stations.each do |station|
     bike_counts[station[:label]] = {
       label: station[:label],
@@ -22,4 +19,3 @@ SCHEDULER.every '60s' do
 
   send_event('citibikenyc', { items: bike_counts.values })
 end
-

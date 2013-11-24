@@ -6,10 +6,12 @@ gem 'citibikenyc'
 gem 'dashing'
 gem 'dotenv'
 gem 'geocoder'
-gem 'httparty'
+gem 'activesupport'
 gem 'nokogiri'
 gem 'rake'
-gem 'twitter'
+gem 'twitter', '>=5.0.0'
+
+gem 'coveralls', require: false
 
 group :development do
   gem 'heroku_san'
@@ -17,7 +19,14 @@ group :development do
 end
 
 group :development, :test do
-  gem 'cucumber'
-  gem 'cucumber-sinatra'
+  gem 'pry'
+  gem 'vcr'
   gem 'rspec'
+  gem 'simple_bdd'
+  gem 'webmock', '<1.16'
+end
+
+group :test do
+  gem 'poltergeist'
+  gem 'capybara'
 end

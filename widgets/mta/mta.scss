@@ -1,0 +1,145 @@
+$background-color: #303030;
+$transition-time: 1s;
+
+@mixin subway-line($color) {
+  background-color: $color;
+  border-color: $color;
+  text-shadow: 1px 0 0 $color, -1px 0 0 $color, 0 1px 0 $color, 0 -1px 0 $color;
+}
+
+.widget.widget-mta {
+  padding: 0;
+  vertical-align: top;
+  background-color: $background-color;
+
+  .header {
+    h1 {
+      padding: 24px 0;
+      margin-bottom: 0;
+      border-bottom: 2px solid black;
+
+      transition: background-color 0.3s;
+    }
+
+    &.good_service h1 {
+      background-color: #18a15e;
+    }
+
+    &.planned_work h1 {
+      background-color: #c09853;
+    }
+
+    &.delays h1 {
+      background-color: #b94a48;
+    }
+
+    &.other h1 {
+      background-color: #999;
+    }
+
+    .status {
+      width: 100%;
+      margin: 20px 0;
+      font-size: 46px;
+    }
+  }
+
+  .subway-status-container {
+    ul {
+      width: 600px;
+      margin: 0 auto;
+    }
+
+    .line {
+      display: inline-block;
+      width: 36px;
+      height: 36px;
+
+      margin: 0 12px 12px 0;
+      border: 2px solid white;
+      border-radius: 19px;
+
+      list-style: none;
+
+      transition: opacity $transition-time;
+      transition: background-color $transition-time;
+
+      &:not(.yes) {
+        opacity: 0.5;
+        background-color: $background-color;
+        color: $background-color;
+      }
+
+      &.delays {
+        animation: delays 5s infinite;
+      }
+
+      span {
+        display: inline-block;
+        margin-top: 4px;
+        margin-left: -1px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+
+    .line-1, .line-2, .line-3 {
+      @include subway-line(rgb(239, 106, 76));
+    }
+
+    .line-4, .line-5, .line-6 {
+      @include subway-line(rgb(82, 175, 90));
+    }
+
+    .line-7 {
+      @include subway-line(rgb(183, 130, 211));
+    }
+
+    .line-A, .line-C, .line-E {
+      @include subway-line(rgb(61, 155, 227));
+    }
+
+    .line-L {
+      @include subway-line(rgb(153, 153, 153));
+    }
+
+    .line-S, .line-I {
+      @include subway-line(rgb(119, 119, 119));
+    }
+
+    .line-B, .line-D, .line-F, .line-M {
+      @include subway-line(rgb(245, 164, 59));
+    }
+
+    .line-N, .line-Q, .line-R {
+      @include subway-line(rgb(251, 207, 51));
+      color: black;
+    }
+
+    .line-J, .line-Z {
+      @include subway-line(rgb(172, 123, 43));
+    }
+
+    .line-G {
+      @include subway-line(rgb(144, 183, 62));
+    }
+
+  }
+}
+
+@keyframes delays {
+  25% {
+    opacity: 0.2;
+    transition: opacity ease-in;
+  }
+
+  50% {
+    opacity: 1;
+    transition: opacity ease-in;
+  }
+
+  75% {
+    opacity: 0.2;
+    transition: opacity ease-in;
+  }
+}

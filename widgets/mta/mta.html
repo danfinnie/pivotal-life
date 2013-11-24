@@ -1,8 +1,13 @@
-<h1 class="title">New York Subway Status</h1>
-<ol>
-  <li data-foreach-item="items" data-bind-class="item.name | prepend 'line-' | append ' ' | append item.status">
-    <span data-bind="item.name"></span>
-  </li>
-</ol>
-<p class="updated-at" data-bind="updatedAtMessage"></p>
+<div class="subway-status-container">
+  <div data-bind-class="current_status.status | prepend 'header '">
+    <h1 class="title">Subway Status</h1>
+    <h2 class="status" data-bind="current_status.status_string"></h2>
+  </div>
+  <ul class="trains">
+    <li data-foreach-train="trains" data-bind-class="train | prepend 'line line-'">
+      <span data-bind="train"></span>
+    </li>
+  </ul>
+</div>
 
+<p class="updated-at" data-bind="updatedAtMessage"></p>

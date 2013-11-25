@@ -364,4 +364,40 @@ http_interactions:
         End Ave & Liberty St","stationAddress":"","availableBikes":22,"availableDocks":1,"nearbyStations":[{"id":363,"distance":0.2303050195026},{"id":327,"distance":0.2678898844349},{"id":309,"distance":0.27934592059502},{"id":417,"distance":0.30654582119257},{"id":195,"distance":0.32634562109898}]}],"activeStations":329,"totalStations":331,"lastUpdate":1385091602}'
     http_version: 
   recorded_at: Fri, 22 Nov 2013 03:39:59 GMT
-recorded_with: VCR 2.7.0
+- request:
+    method: get
+    uri: http://lolcats.com/?orderby=starttime&singleevents=true&start-max=2013-12-01T20:20:24-05:00&start-min=2013-11-24T20:20:24-05:00
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      Server:
+      - nginx/1.2.1
+      Date:
+      - Mon, 25 Nov 2013 01:20:28 GMT
+      Content-Type:
+      - text/html
+      Content-Length:
+      - '184'
+      Connection:
+      - keep-alive
+      Location:
+      - http://www.lolcats.com/?singleevents=true&orderby=starttime&start-min=2013-11-24T20%3A20%3A24-05%3A00&start-max=2013-12-01T20%3A20%3A24-05%3A00
+    body:
+      encoding: UTF-8
+      string: "<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body
+        bgcolor=\"white\">\r\n<center><h1>301 Moved Permanently</h1></center>\r\n<hr><center>nginx/1.2.1</center>\r\n</body>\r\n</html>\r\n"
+    http_version: 
+  recorded_at: Mon, 25 Nov 2013 01:20:28 GMT
+recorded_with: VCR 2.8.0

@@ -23,7 +23,7 @@ group :development, :test do
   gem 'vcr'
   gem 'rspec'
   gem 'simple_bdd'
-  gem 'webmock', '<1.16'
+  gem 'webmock'
 end
 
 group :test do

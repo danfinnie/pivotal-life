@@ -2,9 +2,8 @@ require 'nokogiri'
 require 'open-uri'
 
 class MovemberFetcher
-  def initialize(team_number, page_source = nil)
+  def initialize(team_number)
     @team_number = team_number
-    @page_source = page_source
   end
 
   def fetch
@@ -33,13 +32,13 @@ class MovemberFetcher
   def clean_selector_output(selector)
     team_page.css(selector).first.content.strip
   end
-    
+
   def team_page
     @team_page ||= Nokogiri::HTML(page_source)
   end
 
   def page_source
-    @page_source ||= open(team_url)
+    open(team_url)
   end
 
   def team_url

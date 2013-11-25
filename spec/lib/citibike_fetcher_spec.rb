@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe CitibikeFetcher, :vcr => true do
+describe CitibikeFetcher, :vcr do
   describe '.find' do
     let(:lat_lon) { [40.74033720000001, -73.9951462] }
     let(:radius) { 0.5 }

@@ -1,22 +1,19 @@
-require 'rspec'
-
-require_relative '../../lib/movember_fetcher'
+require 'spec_helper'
 
 describe MovemberFetcher do
-  describe "#fetch" do
-    let(:page_source) { File.open('spec/fixtures/movember_page_source.html') }
-    let(:fetcher) { MovemberFetcher.new(1005517, page_source) }
+  describe "#fetch", :vcr do
+    let(:fetcher) { MovemberFetcher.new(1005517) }
 
     it "returns the correct team name" do
-      expect(fetcher.fetch[:cols][0][:value]).to eq "Pivotal - NYC"
+      expect(fetcher.fetch[:cols][0][:value]).to eq "Pivotal Labs - NYC"
     end
 
     it "returns the correct team size" do
-      expect(fetcher.fetch[:cols][1][:value]).to eq "20"
+      expect(fetcher.fetch[:cols][1][:value]).to eq "21"
     end
 
     it "returns the correct team donation total" do
-      expect(fetcher.fetch[:cols][2][:value]).to eq "$4,764"
+      expect(fetcher.fetch[:cols][2][:value]).to eq "$9,001"
     end
   end
 end
